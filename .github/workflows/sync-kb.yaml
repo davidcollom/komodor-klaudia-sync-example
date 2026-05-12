@@ -10,9 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - file-type: knowledge-base
+          - file_type: knowledge-base
             directory: ./kb
-          - file-type: blueprint
+          - file_type: blueprint
             directory: ./blueprints
 
     runs-on: ubuntu-latest
@@ -21,10 +21,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync ${{ matrix.file-type }} to Klaudia
+      - name: Sync ${{ matrix.file_type }} to Klaudia
         uses: davidcollom/komodor-klaudia-sync@v1
         with:
           directory: ${{ matrix.directory }}
-          file-type: ${{ matrix.file-type }}
+          file-type: ${{ matrix.file_type }}
           api-key: ${{ secrets.KOMODOR_API_KEY }}
           dry-run: ${{ github.ref != 'refs/heads/main' }}
