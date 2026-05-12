@@ -9,8 +9,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        file-type: [knowledge-base, blueprint]
-        directory: [./kb, ./blueprints]
+        include:
+          - file-type: knowledge-base
+            directory: ./kb
+          - file-type: blueprint
+            directory: ./blueprints
 
     runs-on: ubuntu-latest
     steps:
