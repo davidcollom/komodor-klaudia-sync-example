@@ -1,5 +1,7 @@
 # Blueprint: Azure GitOps Event Platform
 
+All Azure Clusters start with AKS-*
+
 ## Overview
 
 This blueprint describes a Kubernetes platform running on Azure Kubernetes Service with GitOps-based delivery and an Azure messaging layer external to the cluster.

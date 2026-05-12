@@ -1,5 +1,7 @@
 # Blueprint: AWS GitOps Event Platform
 
+All AWS Clusters start with AWS-* or AKS-*
+
 ## Overview
 
 This blueprint describes a Kubernetes platform running on Amazon EKS with GitOps-driven deployment and an external AWS messaging backbone.

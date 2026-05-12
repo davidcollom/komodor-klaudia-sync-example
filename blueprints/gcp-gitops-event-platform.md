@@ -1,5 +1,7 @@
 # Blueprint: GCP GitOps Event Platform
 
+All GCP Clusters start with GCP-*
+
 ## Overview
 
 This blueprint describes a Kubernetes platform running on Google Kubernetes Engine with GitOps as the primary deployment model.
