@@ -1,0 +1,27 @@
+name: Sync Klaudia Knowledge
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    strategy:
+      fail-fast: false
+      matrix:
+        file-type: [knowledge-base, blueprint]
+        directory: [./kb, ./blueprints]
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Sync ${{ matrix.file-type }} to Klaudia
+        uses: davidcollom/komodor-klaudia-sync@v1
+        with:
+          directory: ${{ matrix.directory }}
+          file-type: ${{ matrix.file-type }}
+          api-key: ${{ secrets.KOMODOR_API_KEY }}
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
