@@ -4,9 +4,13 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   sync:
-    name: "Sync ${{ matrix.file_type }} to Komodor Klaudia"
+    name: "Sync "
     strategy:
       fail-fast: false
       matrix:
