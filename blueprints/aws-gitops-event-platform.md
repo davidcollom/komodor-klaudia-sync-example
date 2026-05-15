@@ -1,6 +1,6 @@
 # Blueprint: AWS GitOps Event Platform
 
-All AWS Clusters start with AWS-* or AKS-*
+All AWS Clusters start with AWS-* or EKS-*
 
 ## Overview
 
