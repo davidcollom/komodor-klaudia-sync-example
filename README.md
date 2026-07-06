@@ -27,4 +27,4 @@ It exists to show how to structure content and workflows when using the Klaudia 
 ## Reference
 
 For guidance on expected document structure in Klaudia, see:
-[https://help.komodor.com/hc/en-us/articles/32463600112786-Klaudia-md-Organizational-Blueprint-Knowledge]
+[Klaudia.md - Organizational Blueprint Knowledge](https://help.komodor.com/hc/en-us/articles/32463600112786-Klaudia-md-Organizational-Blueprint-Knowledge)
