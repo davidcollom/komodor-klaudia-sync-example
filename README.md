@@ -1,7 +1,7 @@
 # Komodor Klaudia Sync Example Repo
 
 This repository is the companion example for the main action project:
-[https://github.com/davidcollom/komodor-klaudia-sync]
+[komodor-klaudia-sync](https://github.com/davidcollom/komodor-klaudia-sync)
 
 It exists to show how to structure content and workflows when using the Klaudia Sync GitHub Action in a separate customer-style repository.
 
