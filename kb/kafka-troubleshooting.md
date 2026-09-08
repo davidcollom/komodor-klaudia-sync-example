@@ -3,7 +3,7 @@ name: kafka-troubleshooting
 description: Debug, diagnose, and give best-practice recommendations for Amazon MSK (Managed Streaming for Apache Kafka), both provisioned and Serverless. Use whenever the user is investigating an MSK or Kafka problem — consumer lag, under-replicated or offline partitions, disk filling up, broker CPU, throttling, connection failures, auth/TLS errors, rebalancing, slow producers/consumers — or wants a cluster reviewed against Kafka/MSK best practices (sizing, replication, retention, monitoring, security, client tuning). Trigger even when the user just names a symptom on an MSK cluster ("brokers keep going unhealthy", "why is my consumer group lagging", "producers getting NotEnoughReplicas") without saying the words "debug" or "MSK". Works from live AWS access (AWS CLI/boto3, CloudWatch, Kafka admin tools) and stays read-only unless the user explicitly approves a change.
 ---
 
-# MSK Doctor
+# Kafka Troubleshooting
 
 Diagnose and advise on Amazon MSK clusters. Two things this skill does: **debug live problems**, and **review a cluster against best practices**. Both lean on the same evidence — cluster metadata, CloudWatch metrics, and Kafka admin output — and both end in a short, skimmable answer the user can act on.
 
